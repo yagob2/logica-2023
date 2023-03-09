@@ -1,20 +1,15 @@
 programa
 {
-	
+	//fazer uma tabuada que sempre multiplique por 2 até 10
 	funcao inicio()
 	{
-		real nota, media, somaNotas = 0.0
-		inteiro contador
-
-		para(contador = 1; contador <= 5; contador +=1){
-			faca{
-				escreva("\nDigite a nota: ", contador, ": ")
-				leia(nota)
-			}enquanto(nota < 0 ou nota > 10)
-			somaNotas = somaNotas + nota
+		inteiro numero,resultado,i
+		escreva("Número: ")
+		leia(numero)
+		para(i=1;i<=10;i++){
+			resultado = numero*i
+		escreva(numero,"*",i,"=",resultado,"\n")
 		}
-		media = somaNotas / 5
-		escreva("Média : ", media)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +17,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 340; 
+ * @POSICAO-CURSOR = 249; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

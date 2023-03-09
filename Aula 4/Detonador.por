@@ -1,20 +1,18 @@
 programa
 {
+	inclua biblioteca Util --> u
 	
 	funcao inicio()
 	{
-		real nota, media, somaNotas = 0.0
-		inteiro contador
-
-		para(contador = 1; contador <= 5; contador +=1){
-			faca{
-				escreva("\nDigite a nota: ", contador, ": ")
-				leia(nota)
-			}enquanto(nota < 0 ou nota > 10)
-			somaNotas = somaNotas + nota
+		inteiro contador = 10
+		enquanto(contador > 0){
+			limpa()
+			escreva("Detonação em: ", contador, "\n")
+			contador = contador - 1
+			u.aguarde(1000)
 		}
-		media = somaNotas / 5
-		escreva("Média : ", media)
+		limpa()
+		escreva("Boooom !!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 340; 
+ * @POSICAO-CURSOR = 214; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
