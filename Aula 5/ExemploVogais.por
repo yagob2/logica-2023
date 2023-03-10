@@ -1,22 +1,16 @@
 programa
 {
-	
+	//Fazer a leitura de 5 vogais e imprimir do u até o a
 	funcao inicio()
 	{
-		caracter cont = 'S'
-		inteiro num, contador = 0
-		real soma = 0
-		
-		faca{
-			escreva("Número: ")
-			leia(num)
-			soma = soma +num
-			contador++
-			escreva("Deseja continuar (S/s): ")
-			leia(cont)
-		}enquanto(cont == 'S' ou cont == 's')
-		escreva("Total: ",soma)
-		escreva("\nMédia: ", soma/contador)
+		caracter vogais[5] 
+		para(inteiro i=0; i < 5; i++){
+			escreva("Digite a vogal: ")
+			leia(vogais[i])
+		}
+		para(inteiro i=4; i >= 0; i--){
+			escreva(vogais[i],"\n")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 184; 
+ * @POSICAO-CURSOR = 138; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
